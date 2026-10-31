@@ -253,14 +253,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 ### Important Lifecycle Methods
 
-  Method                              Meaning
-  ----------------------------------- ------------------------------------
-  `didFinishLaunchingWithOptions`     Application launch setup
-  `scene(_:willConnectTo:options:)`   Scene connection
-  `sceneDidBecomeActive(_:)`          Scene becomes active
-  `sceneWillResignActive(_:)`         Scene is about to become inactive
-  `sceneDidEnterBackground(_:)`       Scene enters background
-  `sceneWillEnterForeground(_:)`      Scene is moving towards foreground
+| Method | Meaning |
+|---|---|
+| `didFinishLaunchingWithOptions` | Application launch setup |
+| `scene(_:willConnectTo:options:)` | Scene connection |
+| `sceneDidBecomeActive(_:)` | Scene becomes active |
+| `sceneWillResignActive(_:)` | Scene is about to become inactive |
+| `sceneDidEnterBackground(_:)` | Scene enters background |
+| `sceneWillEnterForeground(_:)` | Scene is moving towards foreground |
 
 ### Practical Example: Music Application
 
@@ -355,19 +355,12 @@ Here, `HomeViewController` manages the home screen.
 
 ### `UIView` vs `UIViewController`
 
-  -----------------------------------------------------------------------
-  `UIView`                            `UIViewController`
-  ----------------------------------- -----------------------------------
-  Represents visual content           Manages a screen or part of a
-                                      screen
-
-  Can contain other views             Manages a view hierarchy
-
-  Handles drawing and                 Handles screen lifecycle and
-  interaction-related behavior        coordination
-
-  Example: `UILabel`                  Example: `HomeViewController`
-  -----------------------------------------------------------------------
+| `UIView` | `UIViewController` |
+|---|---|
+| Represents visual content | Manages a screen or part of a screen |
+| Can contain other views | Manages a view hierarchy |
+| Handles drawing and interaction-related behavior | Handles screen lifecycle and coordination |
+| Example: `UILabel` | Example: `HomeViewController` |
 
 ## 4.3 View Hierarchy
 
@@ -499,14 +492,14 @@ looking for an appropriate responder through the responder chain.
 
 Gesture recognizers detect specific user gestures.
 
-  Gesture Recognizer               Purpose
-  -------------------------------- ------------------------
-  `UITapGestureRecognizer`         Detects taps
-  `UIPanGestureRecognizer`         Detects dragging
-  `UIPinchGestureRecognizer`       Detects pinch gestures
-  `UISwipeGestureRecognizer`       Detects swipes
-  `UILongPressGestureRecognizer`   Detects long presses
-  `UIRotationGestureRecognizer`    Detects rotation
+| Gesture Recognizer | Purpose |
+|---|---|
+| `UITapGestureRecognizer` | Detects taps |
+| `UIPanGestureRecognizer` | Detects dragging |
+| `UIPinchGestureRecognizer` | Detects pinch gestures |
+| `UISwipeGestureRecognizer` | Detects swipes |
+| `UILongPressGestureRecognizer` | Detects long presses |
+| `UIRotationGestureRecognizer` | Detects rotation |
 
 ### Example
 
@@ -633,42 +626,24 @@ system components.
 
 UIKit does not work alone.
 
-iOS provides many frameworks, and each framework has its own
-responsibility.
+iOS provides many frameworks, and each framework has its own responsibility.
 
 Here are some important frameworks used in real-world applications.
 
-  -----------------------------------------------------------------------
-  Framework               Purpose                 Practical Example
-  ----------------------- ----------------------- -----------------------
-  UIKit                   UI development          Login screen
-
-  Foundation              Basic data types and    Date, String,
-                          utilities               URLSession
-
-  Core Animation          Animations and          Button animations
-                          compositing             
-
-  Core Graphics           2D drawing              Custom shapes
-
-  Core Location           Location services       Getting user location
-
-  MapKit                  Maps                    Showing maps
-
-  AVFoundation            Audio and video         Camera and video
-                                                  recording
-
-  Photos                  Photo library access    Selecting images
-
-  UserNotifications       Notifications           Local notifications
-
-  Core Data               Object graph and        Saving application data
-                          persistence             
-
-  StoreKit                In-app purchases        Subscription purchase
-
-  Combine                 Reactive programming    Observing data changes
-  -----------------------------------------------------------------------
+| Framework | Purpose | Practical Example |
+|---|---|---|
+| UIKit | UI development | Login screen |
+| Foundation | Basic data types and utilities | Date, String, URLSession |
+| Core Animation | Animations and compositing | Button animations |
+| Core Graphics | 2D drawing | Custom shapes |
+| Core Location | Location services | Getting user location |
+| MapKit | Maps | Showing maps |
+| AVFoundation | Audio and video | Camera and video recording |
+| Photos | Photo library access | Selecting images |
+| UserNotifications | Notifications | Local notifications |
+| Core Data | Object graph and persistence | Saving application data |
+| StoreKit | In-app purchases | Subscription purchase |
+| Combine | Reactive programming | Observing data changes |
 
 ### Practical Example: Food Delivery Application
 
@@ -844,24 +819,15 @@ Here, we describe the UI using SwiftUI views.
 
 ### Comparison
 
-  -----------------------------------------------------------------------
-  UIKit                               SwiftUI
-  ----------------------------------- -----------------------------------
-  Imperative approach                 Declarative approach
-
-  Uses `UIView`                       Uses SwiftUI `View`
-
-  Uses `UIViewController`             No direct `UIViewController`
-                                      equivalent
-
-  Uses Auto Layout                    Uses SwiftUI layout system
-
-  Manual UI updates are common        State-driven UI updates
-
-  Uses Target-Action and delegation   Uses closures, actions, and state
-
-  Mature framework                    Newer framework
-  -----------------------------------------------------------------------
+| UIKit | SwiftUI |
+|---|---|
+| Imperative approach | Declarative approach |
+| Uses `UIView` | Uses SwiftUI `View` |
+| Uses `UIViewController` | Uses SwiftUI `View` with `View` lifecycle and state management |
+| Uses Auto Layout | Uses SwiftUI layout system |
+| Manual UI updates are common | State-driven UI updates |
+| Uses Target-Action and delegation | Uses closures, actions, and state |
+| Mature framework | Newer framework |
 
 ### UIKit and SwiftUI Together
 
@@ -962,61 +928,34 @@ responsibilities.
 
 # 11. Industry Expectations
 
-Knowing how to create `UILabel`, `UIButton`, and `UIView` is not enough
-to become a strong UIKit developer.
+Knowing how to create `UILabel`, `UIButton`, and `UIView` is not enough to become a strong UIKit developer.
 
-A professional UIKit engineer should understand how UIKit works
-internally and how different components interact.
+A professional UIKit engineer should understand how UIKit works internally and how different components interact.
 
 The following topics are important.
 
-  -----------------------------------------------------------------------
-  Topic                               What You Should Understand
-  ----------------------------------- -----------------------------------
-  UIKit Architecture                  How UIKit fits into iOS
-
-  Application Lifecycle               Application states and callbacks
-
-  Scene Lifecycle                     Managing application scenes
-
-  UIView                              View properties and behavior
-
-  UIViewController                    Screen management and lifecycle
-
-  View Hierarchy                      Parent-child view relationships
-
-  Responder Chain                     Event delivery and handling
-
-  Target-Action                       Handling control events
-
-  Gesture Recognizers                 Detecting user gestures
-
-  Auto Layout                         Building adaptive interfaces
-
-  Content Hugging                     Preventing views from expanding
-                                      unnecessarily
-
-  Compression Resistance              Preventing views from shrinking
-                                      unnecessarily
-
-  Layout Lifecycle                    Understanding layout updates
-
-  Core Animation                      Animations and layers
-
-  UITableView                         Building list-based interfaces
-
-  UICollectionView                    Building complex interfaces
-
-  Navigation                          Managing screen transitions
-
-  Memory Management                   ARC, retain cycles, and memory
-                                      leaks
-
-  Main Thread                         Managing UI-related work
-
-  RunLoop                             Understanding event processing and
-                                      scheduling
-  -----------------------------------------------------------------------
+| Topic | What You Should Understand |
+|---|---|
+| UIKit Architecture | How UIKit fits into iOS |
+| Application Lifecycle | Application states and callbacks |
+| Scene Lifecycle | Managing application scenes |
+| UIView | View properties and behavior |
+| UIViewController | Screen management and lifecycle |
+| View Hierarchy | Parent-child view relationships |
+| Responder Chain | Event delivery and handling |
+| Target-Action | Handling control events |
+| Gesture Recognizers | Detecting user gestures |
+| Auto Layout | Building adaptive interfaces |
+| Content Hugging | Preventing views from expanding unnecessarily |
+| Compression Resistance | Preventing views from shrinking unnecessarily |
+| Layout Lifecycle | Understanding layout updates |
+| Core Animation | Animations and layers |
+| UITableView | Building list-based interfaces |
+| UICollectionView | Building complex interfaces |
+| Navigation | Managing screen transitions |
+| Memory Management | ARC, retain cycles, and memory leaks |
+| Main Thread | Managing UI-related work |
+| RunLoop | Understanding event processing and scheduling |
 
 ## Final Goal
 
