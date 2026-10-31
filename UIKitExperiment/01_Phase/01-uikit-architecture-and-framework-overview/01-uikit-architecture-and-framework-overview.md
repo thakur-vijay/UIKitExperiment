@@ -45,19 +45,19 @@ All these UI elements can be created using UIKit.
 
 ### Common UIKit Components
 
-  Component                  Purpose
-  -------------------------- --------------------------------------------
-  `UIView`                   Base class for UI elements
-  `UILabel`                  Displays text
-  `UIButton`                 Creates buttons
-  `UITextField`              Takes text input
-  `UITextView`               Displays or accepts multiple lines of text
-  `UITableView`              Displays lists of data
-  `UICollectionView`         Displays grids and complex layouts
-  `UIScrollView`             Allows scrolling
-  `UINavigationController`   Manages screen navigation
-  `UITabBarController`       Manages tab-based navigation
-  `UIViewController`         Manages a screen or part of a screen
+| Component | Purpose |
+|---|---|
+| `UIView` | Base class for UI elements |
+| `UILabel` | Displays text |
+| `UIButton` | Creates buttons |
+| `UITextField` | Takes text input |
+| `UITextView` | Displays or accepts multiple lines of text |
+| `UITableView` | Displays lists of data |
+| `UICollectionView` | Displays grids and complex layouts |
+| `UIScrollView` | Allows scrolling |
+| `UINavigationController` | Manages screen navigation |
+| `UITabBarController` | Manages tab-based navigation |
+| `UIViewController` | Manages a screen or part of a screen |
 
 ### Practical Example: A Login Screen
 
