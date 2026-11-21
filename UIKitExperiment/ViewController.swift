@@ -7,13 +7,27 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
 
+        let mvcViewController = TaskListViewController()
+
+        addChild(mvcViewController)
+
+        view.addSubview(mvcViewController.view)
+
+        mvcViewController.view.frame = view.bounds
+
+        mvcViewController.view.autoresizingMask = [
+            .flexibleWidth,
+            .flexibleHeight
+        ]
+
+        mvcViewController.didMove(toParent: self)
+
+    }
 
 }
 
