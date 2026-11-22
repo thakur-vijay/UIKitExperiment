@@ -1,9 +1,10 @@
 UIKit Master Roadmap — Basic to Advanced
 
 Phase 1: UIKit Fundamentals
+
 1. [UIKit Architecture and Framework Overview](https://github.com/thakur-vijay/UIKitExperiment/blob/main/UIKitExperiment/01_Phase/01-uikit-architecture-and-framework-overview/01-uikit-architecture-and-framework-overview.md) ✅
-2. UIKit vs SwiftUI
-3. UIKit and the Model-View-Controller (MVC) Pattern
+2. UIKit vs SwiftUI✅
+3. UIKit and the Model-View-Controller (MVC) Pattern✅
 4. UIKit Class Hierarchy
 5. NSObject and Its Role in UIKit
 6. UIResponder and the Responder Hierarchy
@@ -41,7 +42,7 @@ Phase 1: UIKit Fundamentals
 38. UIBlurEffect
 39. UIVibrancyEffect
 40. UIWebView History and Why WKWebView Replaced It
-Phase 2: Swift Prerequisites for Advanced UIKit
+    Phase 2: Swift Prerequisites for Advanced UIKit
 41. Value Types vs Reference Types
 42. Classes, Structures, and Enumerations
 43. Inheritance, Composition, and Polymorphism
@@ -67,15 +68,15 @@ Phase 2: Swift Prerequisites for Advanced UIKit
 63. Tasks and Task Cancellation
 64. Actors and @MainActor
 65. Sendable and Data-Race Safety
-Why this phase matters: UIKit kaafi had tak reference types, delegation, callbacks, and object lifecycles par based hai. In concepts ke bina advanced UIKit code samajhna unnecessarily difficult ho jayega.
-Phase 3: UIView and View Hierarchy
+    Why this phase matters: UIKit kaafi had tak reference types, delegation, callbacks, and object lifecycles par based hai. In concepts ke bina advanced UIKit code samajhna unnecessarily difficult ho jayega.
+    Phase 3: UIView and View Hierarchy
 66. View Hierarchy
 67. Parent Views and Subviews
-68. addSubview(_:)
+68. addSubview(\_:)
 69. removeFromSuperview()
-70. insertSubview(_:at:)
-71. bringSubviewToFront(_:)
-72. sendSubviewToBack(_:)
+70. insertSubview(\_:at:)
+71. bringSubviewToFront(\_:)
+72. sendSubviewToBack(\_:)
 73. superview and subviews
 74. window Property
 75. View Ownership and Retention
@@ -87,15 +88,15 @@ Phase 3: UIView and View Hierarchy
 81. viewDidLoad()
 82. layoutSubviews()
 83. updateConstraints()
-84. draw(_:)
+84. draw(\_:)
 85. setNeedsLayout()
 86. layoutIfNeeded()
 87. setNeedsDisplay()
 88. setNeedsUpdateConstraints()
-89. sizeThatFits(_:)
+89. sizeThatFits(\_:)
 90. sizeToFit()
 91. intrinsicContentSize
-92. systemLayoutSizeFitting(_:)
+92. systemLayoutSizeFitting(\_:)
 93. UIView Layout Margins
 94. safeAreaInsets
 95. safeAreaLayoutGuide
@@ -105,8 +106,8 @@ Phase 3: UIView and View Hierarchy
 99. frame vs bounds
 100. center Property
 101. Coordinate Conversion
-102. convert(_:to:)
-103. convert(_:from:)
+102. convert(\_:to:)
+103. convert(\_:from:)
 104. transform Property
 105. contentMode
 106. clipsToBounds
@@ -124,7 +125,7 @@ Phase 3: UIView and View Hierarchy
 118. Interface Builder Connections
 119. IBOutlet
 120. IBAction
-Phase 4: Auto Layout — From Fundamentals to Advanced
+     Phase 4: Auto Layout — From Fundamentals to Advanced
 121. Auto Layout Architecture
 122. Constraint-Based Layout
 123. NSLayoutConstraint
@@ -165,18 +166,18 @@ Phase 4: Auto Layout — From Fundamentals to Advanced
 158. Custom Layout Guides
 159. Layout Performance
 160. Auto Layout Debugging in Production
-Phase 5: UIViewController and Its Lifecycle
+     Phase 5: UIViewController and Its Lifecycle
 161. View Controller Responsibilities
 162. View Controller Lifecycle Overview
 163. loadView()
 164. viewDidLoad()
-165. viewWillAppear(_:)
-166. viewIsAppearing(_:)
+165. viewWillAppear(\_:)
+166. viewIsAppearing(\_:)
 167. viewWillLayoutSubviews()
 168. viewDidLayoutSubviews()
-169. viewDidAppear(_:)
-170. viewWillDisappear(_:)
-171. viewDidDisappear(_:)
+169. viewDidAppear(\_:)
+170. viewWillDisappear(\_:)
+171. viewDidDisappear(\_:)
 172. View Loading and Lazy Loading
 173. View Controller Memory Management
 174. isViewLoaded
@@ -187,7 +188,7 @@ Phase 5: UIViewController and Its Lifecycle
 179. isBeingDismissed
 180. View Controller Containment
 181. Parent and Child View Controllers
-182. addChild(_:)
+182. addChild(\_:)
 183. didMove(toParent:)
 184. willMove(toParent:)
 185. removeFromParent()
@@ -198,7 +199,7 @@ Phase 5: UIViewController and Its Lifecycle
 190. UIPageViewController
 191. Presentation vs Containment
 192. Modal Presentation
-193. present(_:animated:completion:)
+193. present(\_:animated:completion:)
 194. dismiss(animated:completion:)
 195. Presentation Styles
 196. UIModalPresentationStyle
@@ -208,8 +209,8 @@ Phase 5: UIViewController and Its Lifecycle
 200. View Controller Restoration
 201. State Restoration
 202. View Controller Lifecycle Debugging
-Important: viewDidLoad() aur viewDidAppear(_:) ko interchangeable mat samajhna. Pehla loaded view ki initial setup ke liye hai; doosra tab call hota hai jab view appearance transition complete kar chuka hota hai.
-Phase 6: Event Handling and the Responder Chain
+     Important: viewDidLoad() aur viewDidAppear(\_:) ko interchangeable mat samajhna. Pehla loaded view ki initial setup ke liye hai; doosra tab call hota hai jab view appearance transition complete kar chuka hota hai.
+     Phase 6: Event Handling and the Responder Chain
 203. Event Handling Architecture
 204. UIResponder Fundamentals
 205. Responder Chain Traversal
@@ -219,12 +220,12 @@ Phase 6: Event Handling and the Responder Chain
 209. canBecomeFirstResponder
 210. canResignFirstResponder
 211. Touch Event Delivery
-212. touchesBegan(_:with:)
-213. touchesMoved(_:with:)
-214. touchesEnded(_:with:)
-215. touchesCancelled(_:with:)
+212. touchesBegan(\_:with:)
+213. touchesMoved(\_:with:)
+214. touchesEnded(\_:with:)
+215. touchesCancelled(\_:with:)
 216. Hit Testing
-217. hitTest(_:with:)
+217. hitTest(\_:with:)
 218. point(inside:with:)
 219. Hit-Testing Order
 220. Overlapping Views and Touch Delivery
@@ -244,7 +245,7 @@ Phase 6: Event Handling and the Responder Chain
 234. Gesture Recognizers vs Control Actions
 235. UIControl.Event
 236. Target-Action Pattern
-237. addTarget(_:action:for:)
+237. addTarget(\_:action:for:)
 238. sendActions(for:)
 239. UIKeyCommand
 240. Keyboard Event Handling
@@ -254,7 +255,7 @@ Phase 6: Event Handling and the Responder Chain
 244. Focus Environments
 245. UIFocusGuide
 246. Focus Updates and Focus Debugging
-Phase 7: Navigation and Application Architecture
+     Phase 7: Navigation and Application Architecture
 247. Navigation Stack Fundamentals
 248. UINavigationController Internals
 249. UINavigationItem
@@ -262,11 +263,11 @@ Phase 7: Navigation and Application Architecture
 251. UINavigationBarAppearance
 252. UIBarButtonItem
 253. Push and Pop Navigation
-254. pushViewController(_:animated:)
+254. pushViewController(\_:animated:)
 255. popViewController(animated:)
-256. popToViewController(_:animated:)
+256. popToViewController(\_:animated:)
 257. Navigation Stack Management
-258. setViewControllers(_:animated:)
+258. setViewControllers(\_:animated:)
 259. Navigation Delegation
 260. Navigation Transition Coordination
 261. Custom Navigation Transitions
@@ -284,14 +285,14 @@ Phase 7: Navigation and Application Architecture
 273. View Controller Composition
 274. Reusable Navigation Infrastructure
 275. Navigation State Restoration
-Phase 8: UITableView — Complete Coverage
+     Phase 8: UITableView — Complete Coverage
 276. UITableView Architecture
 277. Table View Data Source
 278. UITableViewDataSource
 279. UITableViewDelegate
 280. Sections and Rows
 281. numberOfSections(in:)
-282. tableView(_:numberOfRowsInSection:)
+282. tableView(\_:numberOfRowsInSection:)
 283. cellForRowAt
 284. UITableViewCell
 285. Cell Reuse Mechanism
@@ -317,7 +318,7 @@ Phase 8: UITableView — Complete Coverage
 305. Prefetching
 306. UITableViewDataSourcePrefetching
 307. Batch Updates
-308. performBatchUpdates(_:completion:)
+308. performBatchUpdates(\_:completion:)
 309. Insert, Delete, and Move Operations
 310. Table View Update Consistency
 311. Empty States
@@ -329,7 +330,7 @@ Phase 8: UITableView — Complete Coverage
 317. Table View Performance Optimization
 318. Cell Rendering Performance
 319. Table View Debugging
-Phase 9: UICollectionView — Complete Coverage
+     Phase 9: UICollectionView — Complete Coverage
 320. Collection View Architecture
 321. UICollectionViewDataSource
 322. UICollectionViewDelegate
@@ -363,8 +364,8 @@ Phase 9: UICollectionView — Complete Coverage
 350. Snapshot Application
 351. Animated Snapshot Updates
 352. Diffable Data Source Reconfiguration
-353. reconfigureItems(_:)
-354. reloadItems(_:)
+353. reconfigureItems(\_:)
+354. reloadItems(\_:)
 355. Traditional Data Sources vs Diffable Data Sources
 356. Prefetching and Cancellation
 357. Collection View Drag and Drop
@@ -374,7 +375,7 @@ Phase 9: UICollectionView — Complete Coverage
 361. Complex Feed Layouts
 362. Adaptive Grid Layouts
 363. Collection View Update Consistency
-Phase 10: Text Input and Text Rendering
+     Phase 10: Text Input and Text Rendering
 364. Text Input Architecture
 365. UITextField Internals
 366. UITextView Internals
@@ -417,7 +418,7 @@ Phase 10: Text Input and Text Rendering
 403. NSTextLayoutFragment
 404. Custom Text Rendering
 405. Rich Text Editing
-Phase 11: Images, Drawing, and Graphics
+     Phase 11: Images, Drawing, and Graphics
 406. UIImage
 407. UIImageView
 408. Image Loading and Caching
@@ -435,7 +436,7 @@ Phase 11: Images, Drawing, and Graphics
 420. CGImage
 421. CGGradient
 422. UIBezierPath
-423. Custom Drawing with draw(_:)
+423. Custom Drawing with draw(\_:)
 424. Drawing Coordinate Systems
 425. Graphics Context State
 426. Clipping Paths
@@ -453,7 +454,7 @@ Phase 11: Images, Drawing, and Graphics
 438. Dynamic Image Rendering
 439. High-Resolution Image Performance
 440. Image Memory Costs
-Phase 12: Core Animation and UIView Animations
+     Phase 12: Core Animation and UIView Animations
 441. Core Animation Architecture
 442. UIKit and Core Animation Relationship
 443. CALayer
@@ -504,7 +505,7 @@ Phase 12: Core Animation and UIView Animations
 488. shouldRasterize
 489. Shadow Rendering Costs
 490. Animation Debugging
-Phase 13: Rendering Pipeline and Display Performance
+     Phase 13: Rendering Pipeline and Display Performance
 491. UIKit Rendering Pipeline Overview
 492. Main Thread Responsibilities
 493. Main Run Loop
@@ -540,7 +541,7 @@ Phase 13: Rendering Pipeline and Display Performance
 523. UI Update Coalescing
 524. Frame-Rate-Aware UI Design
 525. Performance Regression Testing
-Phase 14: Concurrency and Thread Safety in UIKit
+     Phase 14: Concurrency and Thread Safety in UIKit
 526. UIKit Threading Rules
 527. Main Thread vs Main Queue
 528. DispatchQueue.main
@@ -571,7 +572,7 @@ Phase 14: Concurrency and Thread Safety in UIKit
 553. Concurrency Debugging
 554. Thread Sanitizer
 555. Swift Concurrency Instruments
-Phase 15: Memory Management and Resource Lifecycle
+     Phase 15: Memory Management and Resource Lifecycle
 556. ARC in UIKit
 557. View Controller Retention
 558. View Hierarchy Retention
@@ -597,7 +598,7 @@ Phase 15: Memory Management and Resource Lifecycle
 578. Heap Growth Analysis
 579. Resource Ownership
 580. Lifecycle-Aware Resource Management
-Phase 16: State Management and Data Flow
+     Phase 16: State Management and Data Flow
 581. UIKit State Management Fundamentals
 582. Model and View Separation
 583. View Controller Responsibilities
@@ -633,7 +634,7 @@ Phase 16: State Management and Data Flow
 613. State Restoration and Persistence
 614. Predictable UI State
 615. Avoiding Multiple Sources of Truth
-Phase 17: Modern UIKit Configuration APIs
+     Phase 17: Modern UIKit Configuration APIs
 616. Configuration-Based UI Design
 617. UIButton.Configuration
 618. UIBackgroundConfiguration
@@ -661,7 +662,7 @@ Phase 17: Modern UIKit Configuration APIs
 640. UIViewControllerRepresentable
 641. Coordinators in SwiftUI/UIKit Interoperability
 642. State Synchronization Across Frameworks
-Phase 18: Dynamic Type, Accessibility, and Localization
+     Phase 18: Dynamic Type, Accessibility, and Localization
 643. Dynamic Type
 644. UIFontMetrics
 645. Preferred Font Text Styles
@@ -697,14 +698,14 @@ Phase 18: Dynamic Type, Accessibility, and Localization
 675. Locale-Aware Formatting
 676. Localized Dynamic Content
 677. Accessibility Testing
-Phase 19: Traits, Appearance, and Adaptive Interfaces
+     Phase 19: Traits, Appearance, and Adaptive Interfaces
 678. Trait Environment
 679. UITraitCollection
 680. Horizontal Size Classes
 681. Vertical Size Classes
 682. traitCollection
 683. Trait Changes
-684. traitCollectionDidChange(_:) Legacy Behavior
+684. traitCollectionDidChange(\_:) Legacy Behavior
 685. Modern Trait Change Registration
 686. registerForTraitChanges
 687. Adaptive Layout Strategies
@@ -726,15 +727,15 @@ Phase 19: Traits, Appearance, and Adaptive Interfaces
 703. Adaptive Navigation
 704. Adaptive Collection Views
 705. Responsive UIKit Architecture
-Phase 20: App Lifecycle, Scenes, and System Integration
+     Phase 20: App Lifecycle, Scenes, and System Integration
 706. Process Lifecycle vs Scene Lifecycle
 707. App Launch Sequence
 708. Scene Connection Lifecycle
 709. Scene Activation States
-710. sceneDidBecomeActive(_:)
-711. sceneWillResignActive(_:)
-712. sceneWillEnterForeground(_:)
-713. sceneDidEnterBackground(_:)
+710. sceneDidBecomeActive(\_:)
+711. sceneWillResignActive(\_:)
+712. sceneWillEnterForeground(\_:)
+713. sceneDidEnterBackground(\_:)
 714. Scene Disconnection
 715. Multiple Scene Support
 716. Multiple Windows on iPad
@@ -752,7 +753,7 @@ Phase 20: App Lifecycle, Scenes, and System Integration
 728. Deep Links During App Launch
 729. Scene-Based URL Handling
 730. External Events and Scene Routing
-Phase 21: System UI and Interaction APIs
+     Phase 21: System UI and Interaction APIs
 731. UIAlertController
 732. Alert and Action Sheet Presentation
 733. Custom Alert Alternatives
@@ -793,7 +794,7 @@ Phase 21: System UI and Interaction APIs
 768. Edge-to-Edge Layout
 769. additionalSafeAreaInsets
 770. System Gesture Deferral
-Phase 22: Scroll Views and Advanced Scrolling
+     Phase 22: Scroll Views and Advanced Scrolling
 771. UIScrollView Architecture
 772. contentSize
 773. contentOffset
@@ -809,7 +810,7 @@ Phase 22: Scroll Views and Advanced Scrolling
 783. UIScrollViewDelegate
 784. Scroll Lifecycle Callbacks
 785. Programmatic Scrolling
-786. setContentOffset(_:animated:)
+786. setContentOffset(\_:animated:)
 787. Scroll-to-Top Behavior
 788. Nested Scrolling
 789. Gesture Arbitration in Nested Scroll Views
@@ -824,7 +825,7 @@ Phase 22: Scroll Views and Advanced Scrolling
 798. Scroll Performance
 799. Scroll Hitch Diagnosis
 800. Scroll-Driven Animations
-Phase 23: Networking and Asynchronous Content in UIKit
+     Phase 23: Networking and Asynchronous Content in UIKit
 801. Networking Responsibilities in UIKit Applications
 802. URLSession Integration
 803. Async API Calls from View Controllers
@@ -849,7 +850,7 @@ Phase 23: Networking and Asynchronous Content in UIKit
 822. Preventing Stale Results
 823. Coordinating UI and Data Lifecycles
 824. Background Refresh and UI Synchronization
-Phase 24: Testing UIKit Applications
+     Phase 24: Testing UIKit Applications
 825. Unit Testing UIKit Components
 826. Testing View Models
 827. Testing State Transitions
@@ -878,7 +879,7 @@ Phase 24: Testing UIKit Applications
 850. Memory Regression Testing
 851. Deterministic UI Tests
 852. Flaky UI Test Diagnosis
-Phase 25: UIKit Debugging and Diagnostics
+     Phase 25: UIKit Debugging and Diagnostics
 853. Xcode View Debugger
 854. Debug View Hierarchy
 855. Auto Layout Debugging
@@ -911,7 +912,7 @@ Phase 25: UIKit Debugging and Diagnostics
 882. Diagnosing Stale UI
 883. Production Crash Analysis
 884. Crash Reports and Symbolication
-Phase 26: UIKit Architecture and Framework Design
+     Phase 26: UIKit Architecture and Framework Design
 885. Separation of Concerns
 886. Single Responsibility Principle
 887. Dependency Inversion Principle
@@ -938,7 +939,7 @@ Phase 26: UIKit Architecture and Framework Design
 908. Avoiding Massive View Controllers
 909. Avoiding Over-Engineering
 910. UIKit Architecture Trade-Offs
-Phase 27: Advanced UIKit Internals
+     Phase 27: Advanced UIKit Internals
 911. UIResponder Internal Responsibilities
 912. Event Routing and Responder Chain Behavior
 913. Hit Testing and Coordinate Transformations
@@ -965,8 +966,8 @@ Phase 27: Advanced UIKit Internals
 934. Reading UIKit Documentation and Release Notes
 935. Building Minimal Reproducible Examples
 936. Understanding Undefined or Unspecified Behavior
-Ek important distinction: UIKit ke internal implementation details ka kuch hissa Apple publicly document nahi karta. Isliye in topics mein documented contracts, observed behavior, aur speculation ko alag rakhna seekhna. Private APIs ko production code mein use karna is learning ka objective nahi hai.
-Phase 28: Advanced Interaction and Custom UI Systems
+     Ek important distinction: UIKit ke internal implementation details ka kuch hissa Apple publicly document nahi karta. Isliye in topics mein documented contracts, observed behavior, aur speculation ko alag rakhna seekhna. Private APIs ko production code mein use karna is learning ka objective nahi hai.
+     Phase 28: Advanced Interaction and Custom UI Systems
 937. Custom Control Development
 938. Reusable Form Controls
 939. Custom Selection Controls
@@ -991,7 +992,7 @@ Phase 28: Advanced Interaction and Custom UI Systems
 958. External Display Interfaces
 959. Custom Focus Navigation
 960. Advanced Accessibility for Custom Components
-Phase 29: Production-Level Reliability and Performance
+     Phase 29: Production-Level Reliability and Performance
 961. UI Responsiveness Budgets
 962. Launch-Time Optimization
 963. View Controller Creation Costs
@@ -1020,7 +1021,7 @@ Phase 29: Production-Level Reliability and Performance
 986. Performance Monitoring
 987. Crash-Free UI Flows
 988. UI Architecture Under Feature Growth
-Phase 30: UIKit and Other Apple Frameworks
+     Phase 30: UIKit and Other Apple Frameworks
 989. UIKit and Foundation
 990. UIKit and Core Graphics
 991. UIKit and Core Animation

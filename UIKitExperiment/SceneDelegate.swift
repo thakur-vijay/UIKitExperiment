@@ -20,7 +20,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let window = UIWindow(windowScene: windowScene)
         
-        let rootViewController = TaskListViewController()
+//        let rootViewController = TaskListViewController()
+        let rootViewController = HierarchyInspectorViewController()
         
         window.rootViewController = rootViewController
         
