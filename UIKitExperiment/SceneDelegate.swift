@@ -19,9 +19,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
         let window = UIWindow(windowScene: windowScene)
-        
-//        let rootViewController = TaskListViewController()
-        let rootViewController = HierarchyInspectorViewController()
+
+        //        let rootViewController = TaskListViewController()
+//        let rootViewController = HierarchyInspectorViewController()
+//        let rootViewController = NSObjectInspectorViewController()
+        let rootViewController = ResponderHierarchyViewController()
         
         window.rootViewController = rootViewController
         

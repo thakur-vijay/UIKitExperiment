@@ -5,8 +5,8 @@ Phase 1: UIKit Fundamentals
 1. [UIKit Architecture and Framework Overview](https://github.com/thakur-vijay/UIKitExperiment/blob/main/UIKitExperiment/01_Phase/01-uikit-architecture-and-framework-overview/01-uikit-architecture-and-framework-overview.md) ✅
 2. UIKit vs SwiftUI✅
 3. UIKit and the Model-View-Controller (MVC) Pattern✅
-4. UIKit Class Hierarchy
-5. NSObject and Its Role in UIKit
+4. UIKit Class Hierarchy✅
+5. NSObject and Its Role in UIKit✅
 6. UIResponder and the Responder Hierarchy
 7. UIApplication and Application Entry Points
 8. UIApplicationDelegate

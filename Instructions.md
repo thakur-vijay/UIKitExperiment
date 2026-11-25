@@ -28,7 +28,7 @@ Prioritize practical understanding over unnecessary theory.
 I will provide the following information:
 
 - **Phase:** 1
-- **Topic:** UIKit Class Hierarchy
+- **Topic:** NSObject and Its Role in UIKit
 - **Platform:** iOS
 - **Language:** Swift
 - **Framework:** UIKit
